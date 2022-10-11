@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="700dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="700dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_dialog_shangtou" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/icon_btn"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:background="@drawable/shape_radius_fff_xx"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="学生基本信息"
+                android:textColor="@color/color_000000"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/iv_zb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/color_999999" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/btn_shape_theme"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:textSize="12sp"
+                android:text="上传照片"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="学生学号"
+                    android:textColor="@color/color_000000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/tv_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_line_828df1"
+                    android:hint="请输入学生学号"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/shape_edit_cursor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/color_000000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_line_828df1"
+                    android:hint="请输入学生姓名"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/shape_edit_cursor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="性别"
+                    android:textColor="@color/color_000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_xb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_line_828df1"
+                    android:hint="请输入学生性别（男/女）"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/shape_edit_cursor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="出生日期"
+                    android:textColor="@color/color_000000"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_csrq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_line_828df1"
+                    android:hint="请输入学生出生日期"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/shape_edit_cursor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="出生日期"
+                    android:textColor="@color/color_000000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_line_828df1"
+                    android:hint="请输入学生出生日期"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/shape_edit_cursor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="身高"
+                    android:textColor="@color/color_000000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/tv_sg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_line_828df1"
+                    android:hint="请输入学生身高"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/shape_edit_cursor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="体重"
+                    android:textColor="@color/color_000000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/tv_tz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_line_828df1"
+                    android:hint="请输入学生体重"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/shape_edit_cursor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="家长电话"
+                    android:textColor="@color/color_000000"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/tv_dh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_radius_line_828df1"
+                    android:hint="请输入学生家长电话"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/shape_edit_cursor"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
